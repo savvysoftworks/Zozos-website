@@ -4,19 +4,30 @@
 <head>
 <title>Zozo's'</title>
 <link href="courtney.css" rel=stylesheet>
+<script type="text/javascript" src="scripts/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		pause:  1 
+	});
+});
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
 	<div id="header">
-		Zozo's 
+		<img src="collage/headertry.jpg" width="500" height="100">
 	</div>
 
 	<div id="nav">
-		Zozo's </br>
 		1517 Broad St.</br>
 		Greensburg, Pa 15601</br>
 		Hours:</br>
-		Tuesday-</br>
+		Tuesday -</br>
+		Thursday: 11-12am</br>
 		Saturday: 3-12am</br>
 		Kitchen is open until 10pm
 		<ul>
@@ -24,7 +35,16 @@
 			<li>Rock Stars</li>
 			<li>Contact Us</li>
 		</ul>
-		</div>
-
+	</div>
+	<div class="slideshow">
+		<img src="images/barmirror.jpg" width="878px" height="582"  alt="bar at Zozo's" />
+	   	<img src="images/cafe.jpg" width="878px" height="582px"  alt="corner of resturant" />
+	   	<img src="images/quote.jpg" width="878px" height="582px"  alt="quote on the wall" />
+	   	<img src="images/night24.jpg" width="878px" height="582px"  alt="patio at night" />
+	</div>
+	
+	<div class="footer">
+		
+	</div>
 </body>
 </html>
